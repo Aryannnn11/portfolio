@@ -8,3 +8,14 @@ body.light{--bg:#f3f5ee;--bg-2:#e9eee8;--panel:#fdfef9;--panel-soft:#e6ece5;--in
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
 .mobile-tools{display:flex;align-items:center;gap:8px}.mobile-tools button{min-width:37px}#mobile-theme,#mobile-palette{font-size:19px}.nav-link{position:relative}body.light .mini-dashboard,body.light .terminal-art,body.light .payment-card{color:#f4fff6}body.light .visual-sub,body.light .visual-payment,body.light .visual-cli,body.light .visual-simon{color:#0e1c25}
+/* Placement-readiness polish: readable results, touch targets and visual consistency */
+.filter-status{font:11px/1.5 var(--mono);color:var(--muted);margin:-14px 0 18px;letter-spacing:.045em}
+#mobile-theme,#mobile-palette,#mobile-menu{min-height:42px}
+.project-footer a,.case-study-link,.ghost-button,.inline-link{min-height:32px;align-items:center}
+.project-footer a{display:inline-flex;align-items:center}
+#dialog-content .dialog-links a:hover{filter:brightness(.92);transform:translateY(-1px)}
+#dialog-content .dialog-links a{transition:filter .2s,transform .2s}
+.project-card:focus-visible{outline:2px solid var(--acid);outline-offset:4px}
+.project-visual{isolation:isolate}
+@media(max-width:680px){.mobile-topbar{padding-inline:16px}.mobile-topbar button{padding:8px 10px}.mobile-topbar button span{margin-left:4px}.hero-foot strong{overflow-wrap:anywhere}.project-footer{gap:12px}.project-body{padding:24px 19px}.contact-actions{align-items:stretch}.contact-actions .primary-button{justify-content:space-between}}
+@media(prefers-reduced-motion:reduce){.asterisk,.contact-orbit,.terminal-caret{animation:none!important}}
