@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1018">
+  <meta name="description" content="Aryan Kumar — software developer building useful full-stack experiences, secure payment workflows, developer tooling and interactive products.">
+  <title>Aryan Kumar — Software Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Site information and navigation">
+      <a href="#home" class="identity" aria-label="Aryan Kumar home">
+        <span class="identity-mark">AK<span>.</span></span>
+        <span class="identity-copy"><strong>Aryan Kumar</strong><small>SOFTWARE DEVELOPER</small></span>
+      </a>
+      <div class="sidebar-middle">
+        <div class="sidebar-label">NAVIGATE / 01—05</div>
+        <nav class="side-nav" aria-label="Main navigation">
+          <a href="#home" class="nav-link active" data-section="home"><span class="nav-number">01</span> Overview <span class="nav-arrow">↗</span></a>
+          <a href="#projects" class="nav-link" data-section="projects"><span class="nav-number">02</span> Projects <span class="nav-arrow">↗</span></a>
+          <a href="#about" class="nav-link" data-section="about"><span class="nav-number">03</span> About <span class="nav-arrow">↗</span></a>
+          <a href="#stack" class="nav-link" data-section="stack"><span class="nav-number">04</span> Tech Stack <span class="nav-arrow">↗</span></a>
+          <a href="#contact" class="nav-link" data-section="contact"><span class="nav-number">05</span> Contact <span class="nav-arrow">↗</span></a>
+        </nav>
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-label">QUICK ACCESS</div>
+        <a class="sidebar-action" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer"><span>↗</span> View résumé <span class="shortcut">PDF</span></a>
+        <a class="sidebar-action" href="https://github.com/Aryannnn11" target="_blank" rel="noopener noreferrer"><span>⌘</span> GitHub profile <span class="shortcut">↗</span></a>
+        <button class="sidebar-action as-button" id="palette-open" type="button"><span>⌕</span> Command menu <span class="shortcut">Ctrl K</span></button>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="availability"><span class="signal"></span><span>OPEN TO SOFTWARE ROLES</span></div>
+        <div class="sidebar-location">IIT Madras · India<br><span>Naval Architecture & Ocean Engineering</span></div>
+        <div class="sidebar-tools"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">◐ <span>Switch theme</span></button><span class="edition">PORTFOLIO / V2.0</span></div>
+      </div>
+    </aside>
+
+    <main id="main" class="content">
+      <header class="mobile-topbar"><a href="#home" class="mobile-brand">AK<span>.</span></a><div class="mobile-tools"><button id="mobile-theme" type="button" aria-label="Toggle light or dark theme">◐</button><button id="mobile-palette" type="button" aria-label="Open quick navigation">⌕</button><button id="mobile-menu" type="button" aria-expanded="false" aria-controls="mobile-nav">☰ <span>Menu</span></button></div></header>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="#home">Overview</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#stack">Tech Stack</a><a href="#contact">Contact</a><a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Resume ↗</a>
+      </nav>
+      <section id="home" class="hero section">
+        <div class="topline"><span class="eyebrow">PORTFOLIO / 2026</span><span class="live-clock" id="local-clock">CHENNAI · INDIA</span></div>
+        <div class="hero-intro"><span class="micro-kicker"><span class="micro-line"></span> DESIGNING THE LOGIC BEHIND EXPERIENCES</span>
+          <h1>Building things<br>that <em>actually</em><br><span class="outlined">work.</span><span class="asterisk">✳</span></h1>
+          <div class="hero-lower"><p>I'm <strong>Aryan Kumar</strong> — an engineering student at IIT Madras who enjoys turning complex ideas into practical software. From full-stack applications to developer tools, I like building end to end.</p><div class="hero-actions"><a class="primary-button" href="#projects">Explore projects <span>↗</span></a><a class="ghost-button" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">View resume ↗</a></div></div>
+        </div>
+        <div class="hero-foot"><div><span class="line-label">CURRENT FOCUS</span><strong>Full-stack engineering <span class="green-dot">●</span></strong></div><div><span class="line-label">PROJECTS</span><strong>04 shipped & linked</strong></div><div><span class="line-label">GRADUATING</span><strong>2027 / IIT Madras</strong></div></div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-rule"><span>02 — SELECTED WORK</span><span>2026 EDITION</span></div>
+        <div class="section-title-row"><div><p class="overline">WHAT I'VE BEEN BUILDING</p><h2>Selected <i>projects.</i></h2></div><p class="section-description">Four different engineering problems. Four things built, tested, and put out into the world.</p></div>
+        <div class="filter-bar" role="group" aria-label="Filter projects">
+          <button class="filter-btn selected" data-filter="all" type="button" aria-pressed="true">All work <span>04</span></button>
+          <button class="filter-btn" data-filter="fullstack" type="button" aria-pressed="false">Full-stack <span>02</span></button>
+          <button class="filter-btn" data-filter="tool" type="button" aria-pressed="false">Developer tool <span>01</span></button>
+          <button class="filter-btn" data-filter="game" type="button" aria-pressed="false">Creative coding <span>01</span></button>
+        </div>
+        <div class="project-list">
+          <article class="project-card" data-type="fullstack" data-project="subscription" tabindex="0" aria-label="Subscription Tracker project; press Enter to view case study">
+            <div class="project-visual visual-sub"><div class="visual-top"><span>01 / FULL-STACK + AI</span><span class="visual-symbol">✳</span></div><div class="mini-dashboard"><div class="dash-top"><span>SUBSCRIPTION INTELLIGENCE</span><span>● LIVE</span></div><div class="dash-figure"><small>monthly overview</small><strong>₹2,718</strong></div><div class="dash-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="dash-chips"><b>AI analysis ↗</b><b>Renewals</b></div></div><span class="visual-bottom">TRACK · ANALYZE · FORECAST</span></div>
+            <div class="project-body"><div class="project-over"><span>01 / FEATURED PROJECT</span><span class="category">FULL-STACK / AI</span></div><h3>Subscription <span>Tracker.</span></h3><p>A subscription management platform with secure authentication, renewal tracking, spending analytics, and a Groq-powered assistant that answers questions using real subscription data.</p><div class="project-tags"><span>React</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Groq AI</span></div><div class="project-footer"><button class="case-study-link" data-open="subscription" type="button">Explore case study <span>↗</span></button><a href="https://subscription-tracker-eta-ten.vercel.app/" target="_blank" rel="noopener noreferrer">Live ↗</a><a href="https://github.com/Aryannnn11/subscription-tracker" target="_blank" rel="noopener noreferrer">Code ↗</a></div></div>
+          </article>
+          <article class="project-card" data-type="fullstack" data-project="payment" tabindex="0" aria-label="Payment Gateway Portal project; press Enter to view case study">
+            <div class="project-visual visual-payment"><div class="visual-top"><span>02 / PAYMENTS & SECURITY</span><span class="visual-symbol">↗</span></div><div class="payment-art"><div class="payment-outline"></div><div class="payment-card"><span>PAYFLOW / TEST MODE</span><b>Payment secured.</b><div class="payment-check">✓</div><small>VERIFIED • SIGNED • TRACKED</small></div><div class="payment-orbit"></div></div><span class="visual-bottom">SECURE FLOWS / RELIABLE EVENTS</span></div>
+            <div class="project-body"><div class="project-over"><span>02 / FEATURED PROJECT</span><span class="category">FINTECH / FULL-STACK</span></div><h3>Payment Gateway <span>Portal.</span></h3><p>Razorpay test-mode checkout with server-side payment verification, authenticated transaction history, PostgreSQL analytics and signed, duplicate-safe webhooks.</p><div class="project-tags"><span>React</span><span>Razorpay</span><span>JWT</span><span>Express</span><span>Webhooks</span></div><div class="project-footer"><button class="case-study-link" data-open="payment" type="button">Explore case study <span>↗</span></button><a href="https://payment-gateway-portal.vercel.app/" target="_blank" rel="noopener noreferrer">Live ↗</a><a href="https://github.com/Aryannnn11/Payment-gateway-portal" target="_blank" rel="noopener noreferrer">Code ↗</a></div></div>
+          </article>
+          <article class="project-card" data-type="tool" data-project="devtool" tabindex="0" aria-label="DevTool CLI project; press Enter to view case study">
+            <div class="project-visual visual-cli"><div class="visual-top"><span>03 / CLI + NPM</span><span class="visual-symbol">⌘</span></div><div class="terminal-art"><div class="term-header"><span>● ● ●</span><span>aryan-devtool-cli</span></div><p><span>$</span> npx aryan-devtool-cli uuid</p><p class="terminal-result">✓ 8e6f••••-••••-4c1d-••••</p><p><span>$</span> devtool github Aryannnn11/devtool</p><p class="terminal-result">✓ package published / v1.0.0</p><p class="terminal-caret">_</p></div><span class="visual-bottom">BUILD TOOLS / REMOVE FRICTION</span></div>
+            <div class="project-body"><div class="project-over"><span>03 / FEATURED PROJECT</span><span class="category">DEVELOPER TOOLING</span></div><h3>DevTool <span>CLI.</span></h3><p>A modular Node.js command-line toolkit for GitHub lookups, notes, JSON inspection and UUIDs — published to npm with automated tests and an interactive browser playground.</p><div class="project-tags"><span>Node.js</span><span>Commander.js</span><span>Vitest</span><span>GitHub Actions</span><span>npm</span></div><div class="project-footer"><button class="case-study-link" data-open="devtool" type="button">Explore case study <span>↗</span></button><a href="https://devtool-demo-eosin.vercel.app/" target="_blank" rel="noopener noreferrer">Live ↗</a><a href="https://www.npmjs.com/package/aryan-devtool-cli" target="_blank" rel="noopener noreferrer">npm ↗</a><a href="https://github.com/Aryannnn11/devtool" target="_blank" rel="noopener noreferrer">Code ↗</a></div></div>
+          </article>
+          <article class="project-card" data-type="game" data-project="simon" tabindex="0" aria-label="Simon Game project; press Enter to view case study">
+            <div class="project-visual visual-simon"><div class="visual-top"><span>04 / CREATIVE JAVASCRIPT</span><span class="visual-symbol">◉</span></div><div class="simon-board" aria-label="Decorative preview of Simon Game"><span class="simon-pad pad-green"></span><span class="simon-pad pad-red"></span><span class="simon-pad pad-yellow"></span><span class="simon-pad pad-blue"></span><span class="simon-center">SIMON</span></div><span class="visual-bottom">WATCH / REMEMBER / REPEAT</span></div>
+            <div class="project-body"><div class="project-over"><span>04 / FEATURED PROJECT</span><span class="category">INTERACTIVE GAME</span></div><h3>Simon <span>Game.</span></h3><p>A browser memory game built with JavaScript and the Web Audio API. It plays progressively longer color sequences, validates player input and saves the best completed level.</p><div class="project-tags"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Web Audio</span><span>LocalStorage</span></div><div class="project-footer"><button class="case-study-link" data-open="simon" type="button">Explore case study <span>↗</span></button><a href="https://simon-game-olive-gamma.vercel.app/" target="_blank" rel="noopener noreferrer">Live ↗</a><a href="https://github.com/Aryannnn11/Simon-game" target="_blank" rel="noopener noreferrer">Code ↗</a></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-rule"><span>03 — THE PERSON</span><span>BACKGROUND</span></div>
+        <div class="about-grid"><div><p class="overline">BEYOND THE CODE</p><h2>An engineer by education.<br><i>A builder by instinct.</i></h2></div><div class="about-copy"><p>I'm pursuing a <strong>B.Tech in Naval Architecture and Ocean Engineering</strong> at <strong>Indian Institute of Technology Madras</strong> (2023–2027).</p><p>Alongside my degree, I explore software development by building projects that involve real product concerns: user authentication, databases, third-party APIs, payment verification, deployment and useful developer workflows.</p><p>I'm especially interested in software development opportunities where I can keep learning while solving meaningful technical problems.</p><a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="inline-link">Read the full resume <span>↗</span></a></div></div>
+        <div class="education-block"><span class="education-label">EDUCATION / 2023—2027</span><div><strong>Indian Institute of Technology Madras</strong><p>B.Tech · Naval Architecture and Ocean Engineering</p></div><span class="education-arrow">↗</span></div>
+      </section>
+
+      <section class="section skills-section" id="stack"><div class="section-rule"><span>04 — THE TOOLKIT</span><span>TECHNOLOGIES</span></div><div class="section-title-row"><div><p class="overline">TECHNOLOGY IS THE MEDIUM</p><h2>Tools of <i>the trade.</i></h2></div><p class="section-description">Technologies I've used across the projects above.</p></div>
+      <div class="skill-groups"><div class="skill-group"><span class="group-num">01 /</span><h3>Frontend</h3><div class="skill-tags"><span>JavaScript (ES6+)</span><span>TypeScript</span><span>HTML5</span><span>CSS3</span><span>React</span><span>Vite</span><span>Responsive UI</span><span>jQuery</span></div></div><div class="skill-group"><span class="group-num">02 /</span><h3>Backend & Data</h3><div class="skill-tags"><span>Node.js</span><span>Express.js</span><span>REST APIs</span><span>PostgreSQL</span><span>SQL</span><span>JWT</span><span>bcrypt</span><span>Python</span></div></div><div class="skill-group"><span class="group-num">03 /</span><h3>Platforms & Tooling</h3><div class="skill-tags"><span>Git & GitHub</span><span>GitHub Actions</span><span>Vercel</span><span>Render</span><span>Neon</span><span>npm</span><span>Vitest</span><span>Groq API</span><span>Razorpay API</span><span>Webhooks</span></div></div></div>
+      </section>
+
+      <section class="section contact-section" id="contact"><div class="section-rule"><span>05 — NEXT STEPS</span><span>CONTACT</span></div><div class="contact-panel"><div class="contact-orbit" aria-hidden="true">✳</div><p class="overline">HAVE SOMETHING IN MIND?</p><h2>Let's make<br><i>something happen.</i></h2><p>I'm open to software development opportunities, collaborative projects and conversations around building great software.</p><div class="contact-actions"><a class="primary-button" href="https://github.com/Aryannnn11" target="_blank" rel="noopener noreferrer">Find me on GitHub <span>↗</span></a><a class="ghost-button" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Open resume ↗</a></div></div>
+      </section>
+      <footer class="footer"><span>© <span id="year">2026</span> ARYAN KUMAR</span><span>DESIGNED FOR THE WEB · BUILT WITH INTENTION</span><a href="#home">BACK TO TOP ↑</a></footer>
+    </main>
+  </div>
+
+  <dialog class="case-dialog" id="case-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><div class="dialog-top"><span id="dialog-kicker">PROJECT CASE STUDY</span><button type="button" id="dialog-close" aria-label="Close case study">✕ Close</button></div><div id="dialog-content"></div></div></dialog>
+  <dialog class="palette" id="palette" aria-label="Quick navigation menu"><div class="palette-inner"><div class="palette-head"><span>⌕</span><input id="palette-input" type="search" placeholder="Jump to a section or project..." aria-label="Search navigation" autocomplete="off"><kbd>ESC</kbd></div><div class="palette-results" id="palette-results"></div><p class="palette-hint">↑ ↓ TO NAVIGATE · ENTER TO SELECT · ESC TO CLOSE</p></div></dialog>
+</body>
+</html>
