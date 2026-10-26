@@ -134,6 +134,10 @@ filterButtons.forEach(button => button.addEventListener('click', () => setFilter
 const themeButton = document.getElementById('theme-toggle');
 function applyTheme(theme) {
   document.body.classList.toggle('light', theme === 'light');
+  document.querySelectorAll('#theme-toggle, #mobile-theme').forEach(button => {
+    button.setAttribute('aria-pressed', String(theme === 'light'));
+    button.setAttribute('aria-label', theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+  });
   themeButton.setAttribute('aria-label', theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
   themeButton.querySelector('span').textContent = theme === 'light' ? 'Dark theme' : 'Light theme';
   try { localStorage.setItem('ak-v2-theme', theme); } catch {}
