@@ -128,6 +128,8 @@ function setFilter(filter) {
     button.setAttribute('aria-pressed', String(active));
   });
   cards.forEach(card => { card.hidden = filter !== 'all' && card.dataset.type !== filter; });
+  const count = cards.filter(card => !card.hidden).length;
+  document.getElementById('filter-status').textContent = `${count} project${count === 1 ? '' : 's'} shown`;
 }
 filterButtons.forEach(button => button.addEventListener('click', () => setFilter(button.dataset.filter)));
 
@@ -181,6 +183,13 @@ mobileMenu.addEventListener('click', () => {
   const open = mobileNav.hidden;
   mobileNav.hidden = !open;
   mobileMenu.setAttribute('aria-expanded', String(open));
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !mobileNav.hidden) {
+    mobileNav.hidden = true;
+    mobileMenu.setAttribute('aria-expanded', 'false');
+    mobileMenu.focus();
+  }
 });
 mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
   mobileNav.hidden = true;
